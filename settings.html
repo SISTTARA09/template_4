@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- normalize file    -->
+    <link rel="stylesheet" href="css/normalize.css">
+       <!-- icons file     -->
+    <link rel="stylesheet" href="">
+       <!-- google font file    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+       <!-- CSS files    -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/framework.css">
+       <!-- Font Awsome    -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Settings</title>
+</head>
+
+<body>
+    <div class="parent-container">
+        <header class="header p-20">
+            <div class="search border-sm radius-border">
+                <i class="fa-solid fa-magnifying-glass m-r-10"></i>
+                <input type="text" placeholder="Type A Keyword">
+            </div>
+            <div class="info">
+                <i class="fa-regular fa-bell"></i>
+                <img src="imgs/avatar.png" alt="avatar">
+            </div>
+        </header>
+        <aside class="aside p-t-20">
+            <h3>Elzero</h3>
+            <div class="paragraphs m-t-40">
+                <a href="index.html">
+                    <i class="fa-solid fa-list-check"></i>
+                    <span> Dashboard </span> </a>
+                <a href="settings.html" class="active"><i class="fa-solid fa-gear"></i><span> Settings </span> </a>
+                <a href="profile.html"><i class="fa-regular fa-user"></i><span> Profile </span></a>
+                <a href="projects.html"><i class="fa-solid fa-diagram-project"></i> <span>Projects </span></a>
+                <a href="courses.html"><i class="fa-solid fa-graduation-cap"></i> <span>Courses </span></a>
+                <a href="friends.html"><i class="fa-regular fa-circle-user"></i> <span>Frinds </span></a>
+                <a href="files.html"><i class="fa-regular fa-file"></i> <span> File </span></a>
+                <a href="plans.html"><i class="fa-regular fa-credit-card"></i> <span> Plans </span></a>
+            </div>
+        </aside>
+        <article class="article settings p-l-20">
+            <h1>Settings</h1>
+            <div class="boxes-container">
+                <div class="box site-controle">
+                    <h2>site controle</h2>
+                    <div class="top">
+                        <p>control the website if there is maintenance</p>
+                    </div>
+                    <div class="middle">
+                        <div class="info">
+                            <h4>website control</h4>
+                            <p>open/close website and type reason</p>
+                        </div>
+                        <div class="check-box">
+                            <input type="checkbox" id="id5">
+                            <label for="id5">
+                                <i class="fa-solid fa-check" ></i>
+                                <i class="fa-solid fa-xmark" ></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <input type="text" placeholder="close message content">
+                    </div>
+                </div>
+                <div class="box general-info">
+                    <h2>general info</h2>
+                    <div class="top">
+                        <p>Genral onformation about your account</p>
+                    </div>
+                    <div class="middle">
+                        <form action="#">
+                            <label for="firstname">first name</label>
+                            <input type="text" placeholder="first name" id="firstname">
+                            <label for="lastname">last name</label>
+                            <input type="text" placeholder="lastname" id="firstname">
+                        </form>
+                    </div>
+                    <div class="bottom">
+                        <label for="email">email</label>
+                        <div class="info">
+                            <input type="email" value="@Elzero" disabled id="email">
+                            <a href="#">change</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box security-info">
+                    <h2>security info</h2>
+                    <div class="top">
+                        <p>security information about your account</p>
+                    </div>
+                    <div class="middle">
+                        <div class="password">
+                            <div class="info">
+                                <h4>password</h4>
+                                <p>last change on 25/10/2021</p>
+                            </div>
+                            <button>change</button>
+                        </div>
+                        <div class="authentication">
+                            <div class="info">
+                                <h4>two-Factor authentication </h4>
+                                <p>Enable/Disable the feature</p>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" id="id6">
+                                <label for="id6">
+                                    <i class="fa-solid fa-check"></i>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="info">
+                            <h4>devices</h4>
+                            <p>check the login devices list</p>
+                        </div>
+                        <button>Devices</button>
+                    </div>
+                </div>
+                <div class="box social-info">
+                    <h2>social ifno</h2>
+                    <div class="top">
+                        <p>social media information</p>
+                    </div>
+                    <div class="middle">
+                        <form action="#">
+                            <div>
+                                <i class="fa-brands fa-twitter"></i>
+                                <input type="text" placeholder="Twitter Username">
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-facebook" ></i>
+                                <input type="text" placeholder="Facebook Username">
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-linkedin" ></i>
+                                <input type="text" placeholder="linkedin Username">
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-youtube" ></i>
+                                <input type="text" placeholder="Youtube Username">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="box widgets-control">
+                    <h2>widgets control</h2>
+                    <div class="top">
+                        <p>Show/Hide Widgets</p>
+                    </div>
+                    <div class="middle">
+                        <div class="line">
+                            <input type="checkbox" id="id1">
+                            <label for="id1"> <i class="fa-solid fa-check" ></i> Quick draft</label>
+                        </div>
+                        <div class="line">
+                            <input type="checkbox" id="id2">
+                            <label for="id2"> <i class="fa-solid fa-check" ></i> Quick draft</label>
+                        </div>
+                        <div class="line">
+                            <input type="checkbox" id="id3">
+                            <label for="id3"> <i class="fa-solid fa-check" ></i> Quick draft</label>
+                        </div>
+                        <div class="line">
+                            <input type="checkbox" id="id4">
+                            <label for="id4"> <i class="fa-solid fa-check" ></i> Quick draft</label>
+                        </div>
+                        <div class="line">
+                            <input type="checkbox" id="id8">
+                            <label for="id8"> <i class="fa-solid fa-check" ></i> Quick draft</label>
+                        </div>
+                        <div class="line">
+                            <input type="checkbox" id="id9">
+                            <label for="id9"> <i class="fa-solid fa-check" ></i> Quick draft</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="box backup-manager">
+                    <h2>backup manager</h2>
+                    <div class="top">
+                        <p>control backup time and location</p>
+                    </div>
+                    <div class="middle">
+                        <div class="line">
+                            <input type="radio" name="radio" id="id11">
+                            <label for="id11">daily</label>
+                        </div>
+                        <div class="line">
+                            <input type="radio" name="radio" id="id12">
+                            <label for="id12">monthly</label>
+                        </div>
+                        <div class="line">
+                            <input type="radio" name="radio" id="id13">
+                            <label for="id13">yearly</label>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="box_1">
+                            <i class="fa-solid fa-check" ></i>
+                            <span>megaman</span>
+                        </div>
+                        <div class="box_1">
+                            <i class="fa-solid fa-check" ></i>
+                            <span>zero</span>
+                        </div>
+                        <div class="box_1">
+                            <i class="fa-solid fa-check" ></i>
+                            <span>Sisttara</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</body>
+</html>
